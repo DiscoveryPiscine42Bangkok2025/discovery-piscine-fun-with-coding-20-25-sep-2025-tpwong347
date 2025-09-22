@@ -1,0 +1,1 @@
+(Get-ChildItem | Measure-Object).Count
