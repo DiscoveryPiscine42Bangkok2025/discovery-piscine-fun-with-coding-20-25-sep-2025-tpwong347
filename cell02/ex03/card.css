@@ -1,0 +1,91 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.profile-card {
+    width: 320px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+.profile-card h1 {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.profile-card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.profile-card td {
+    padding: 8px 0;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #eee;
+    object-fit: cover;
+}
+
+.login {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 10px;
+}
+
+.description {
+    font-size: 16px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.social-links {
+    margin: 15px 0;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.2s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+.contact-button {
+    display: inline-block;
+    width: 80%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.2s ease;
+}
+
+.contact-button:hover {
+    background-color: #0056b3;/
+}
