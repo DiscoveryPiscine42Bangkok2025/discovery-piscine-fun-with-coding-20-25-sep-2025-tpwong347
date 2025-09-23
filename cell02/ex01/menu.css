@@ -1,0 +1,77 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+.content {
+    text-align: center;
+    padding: 50px;
+}
+
+.sncf-nav {
+    background-color: #0055a4;
+    overflow: hidden;
+}
+
+.sncf-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.sncf-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute; 
+    background-color: #F5DEB3;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.drop-button {
+    background-color: #F5DEB3;
+    color: #333 !important;
+}
+
+.ingredient a {
+    color: black !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.ingredient.ham {
+    background-color: #F8C8DC; 
+    border-bottom: 1px solid #e0b4c6;
+}
+
+.ingredient.cheese {
+    background-color: #FFD700; 
+    border-bottom: 1px solid #e6c300;
+}
+
+
+.ingredient a:hover {
+    filter: brightness(95%);
+}
