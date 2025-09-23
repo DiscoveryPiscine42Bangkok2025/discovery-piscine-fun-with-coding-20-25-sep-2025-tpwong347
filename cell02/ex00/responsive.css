@@ -10,7 +10,7 @@ html, body {
     width: 100%;
     border-collapse: collapse;
     height: 100%;
-    /* ลบ border ออกไปเพื่อให้ดูสะอาดตาเหมือนโจทย์ ex00 */
+    
     border: none;
 }
 
