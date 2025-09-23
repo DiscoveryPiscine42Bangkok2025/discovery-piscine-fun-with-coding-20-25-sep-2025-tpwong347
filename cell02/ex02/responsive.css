@@ -1,0 +1,33 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+.my-table {
+    width: 100%;
+    border-collapse: collapse;
+    height: 100%;
+    
+    border: none;
+}
+
+
+.my-table td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+
+.first-cell {
+    background-color: #d3d3a0;
+    width: 50%;
+}
+
+
+.second-cell {
+    background-color: #f0c0b0;
+    width: 50%;
+}
