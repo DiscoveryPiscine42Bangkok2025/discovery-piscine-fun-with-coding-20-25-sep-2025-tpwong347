@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .calculator {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        input, select {
+            margin: 5px;
+            padding: 8px;
+            font-size: 16px;
+        }
+        #submit-btn {
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="calculator">
+        <input type="text" id="left-operand">
+
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+
+        <input type="text" id="right-operand">
+
+        <input type="submit" value="Try me!" id="submit-btn">
+    </div>
+
+    <script>
+       
+        const calculateButton = document.getElementById('submit-btn');
+        calculateButton.addEventListener('click', function() {
+  
+            const leftValue = document.getElementById('left-operand').value;
+            const rightValue = document.getElementById('right-operand').value;
+            const operator = document.getElementById('operator').value;
+
+          
+            const leftNum = parseInt(leftValue, 10);
+            const rightNum = parseInt(rightValue, 10);
+
+           
+            if (isNaN(leftNum) || isNaN(rightNum) || leftNum < 0 || rightNum < 0) {
+                alert('Error :(');
+                return; 
+            }
+            
+            if ((operator === '/' || operator === '%') && rightNum === 0) {
+                const message = "It's over 9000!";
+                alert(message);
+                console.log(message);
+                return;
+            }
+
+
+            let result;
+            switch (operator) {
+                case '+':
+                    result = leftNum + rightNum;
+                    break;
+                case '-':
+                    result = leftNum - rightNum;
+                    break;
+                case '*':
+                    result = leftNum * rightNum;
+                    break;
+                case '/':
+                    result = leftNum / rightNum;
+                    break;
+                case '%':
+                    result = leftNum % rightNum;
+                    break;
+            }
+
+
+            alert(result);
+            console.log(result);
+        });
